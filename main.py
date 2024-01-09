@@ -10,4 +10,12 @@ print(f"Mean: {x}\tMedian: {y}\t {z}")
 
 new_speed=[]
 for i in range(10):
-  new_speed[i]=Random.randint(1,121)
+  k=random.randint(1,121)
+  new_speed.append(k)
+
+print(new_speed)
+a=numpy.std(speed)
+b=numpy.std(new_speed) #standard deviation
+print(f"Std. deviation of 'speed': {a:.2f}")
+print(f"Std. deviation of 'new_speed': {b:.2f}")
+
